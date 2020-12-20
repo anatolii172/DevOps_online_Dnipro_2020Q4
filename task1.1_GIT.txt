@@ -1,0 +1,24 @@
+a2a686a HEAD@{0}: rebase -i (finish): returning to refs/heads/main
+a2a686a HEAD@{1}: rebase -i (squash): Step 17. Change your index.html. Commit.
+ce54bab HEAD@{2}: rebase -i (pick): Step 17. Change your index.html. Commit.
+cc9841d HEAD@{3}: rebase -i (continue): Step 16. Create branch with name “styles”. Checkout on it. Add styles folder with
+27c516e HEAD@{4}: rebase -i (start): checkout HEAD~2
+9d90d96 HEAD@{5}: commit: minor change
+bdbe432 HEAD@{6}: merge develop: Fast-forward
+6afe89f HEAD@{7}: checkout: moving from develop to main
+bdbe432 HEAD@{8}: commit (merge): Step 19. Merge two new branches into develop using git merge command.
+27c516e HEAD@{9}: reset: moving to HEAD
+27c516e HEAD@{10}: merge images: Fast-forward
+888609b HEAD@{11}: checkout: moving from images to develop
+27c516e HEAD@{12}: checkout: moving from develop to images
+888609b HEAD@{13}: checkout: moving from styles to develop
+fb5649b HEAD@{14}: commit: Step 17. Change your index.html. Commit.
+cf450ff HEAD@{15}: commit: Step 16. Create branch with name “styles”. Checkout on it. Add styles folder with
+888609b HEAD@{16}: checkout: moving from develop to styles
+888609b HEAD@{17}: checkout: moving from images to develop
+27c516e HEAD@{18}: commit: Step14 Change your index.html. Add images source inside it. Commit.
+10b1605 HEAD@{19}: commit: Step13 - Create branch with name “images”. Checkout on it. Add images folder with
+888609b HEAD@{20}: checkout: moving from develop to images
+888609b HEAD@{21}: commit: Step 12 - Create index.html empty file. Commit
+6afe89f HEAD@{22}: checkout: moving from main to develop
+6afe89f HEAD@{23}: commit (initial): Step 10 Make init commit

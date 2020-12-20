@@ -1,0 +1,17 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+config.vm.define "ubuntu16.04" do |ubuntu16|
+ ubuntu16.vm.box = "ubuntu/xenial64"
+ ubuntu16.vm.box_version = "20201124.0.0 "
+ ubuntu16.vm.network "private_network", ip: "192.168.15.10"
+
+ ubuntu16.vm.hostname = "ubuntu16.04"
+ ubuntu16.vm.provider "virtualbox" do |ubuntu16up|
+  ubuntu16up.memory = 2048
+  ubuntu16up.cpus = 2
+  end
+ end
+end

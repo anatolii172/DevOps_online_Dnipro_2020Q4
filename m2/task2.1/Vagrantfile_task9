@@ -1,0 +1,19 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+	
+Vagrant.configure("2") do |config|
+	
+ config.vm.define "ubuntu16.04" do |ubuntu16|
+ ubuntu16.vm.box = "ubuntu/xenial64"
+ ubuntu16.vm.box_version = "20201124.0.0 "
+ ubuntu16.vm.network "private_network", ip: "192.168.15.11"
+ ubuntu16.vm.hostname= "ubuntu"
+ end
+	
+ config.vm.define "centos" do |centos|
+ centos.vm.box = "centos/7"
+ centos.vm.box_version = "1804.02"
+ centos.vm.network "private_network", ip: "192.168.15.12"
+ centos.vm.hostname = "centos"
+ end
+end
