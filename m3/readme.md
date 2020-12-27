@@ -18,6 +18,7 @@
 3 Select a subject area and describe the database schema, (minimum 3 tables)
 
 It's will be simple database of common shop which include 3 table: Customers, Products, Orders.
+![ ](./images/task3_09.jpg  "schema.img")
 
 4 Create a database on the server through the console. 
 
@@ -47,6 +48,17 @@ It's will be simple database of common shop which include 3 table: Customers, Pr
 
 6 Construct and execute SELECT operator with WHERE, GROUP BY and ORDER BY.
 
+WHERE взять из 
+SELECT  code, left(name,10) FROM country WHERE code = 'AFG';
+
+GROUP BY   выбрать что то из списка и сгруппировать.
+mysql> SELECT continent 
+    -> FROM country
+    -> GROUP BY continent;
+
+ORDER BY сортировка по возрастания  c DESC по убыванию 
+SELECT name, population FROM city ORDER BY population LIMIT 5;
+
 7 Execute other different SQL queries DDL, DML, DCL.
 
 8 Create a database of new users with different privileges. Connect to the database as a new user and verify that the privileges allow or deny certain actions.
@@ -55,7 +67,7 @@ It's will be simple database of common shop which include 3 table: Customers, Pr
 	Не дадим права
 	Выходим из mysql командой quit.
 
-![ ](./images/task3_08.jpg  "гыук img")
+![ ](./images/task3_08.jpg  "some.img")
 9 Make a selection from the main table DB MySQL.
 
 ##### PART 2
