@@ -49,17 +49,19 @@ It's will be simple database of common shop which include 3 table: Customers, Pr
 6 Construct and execute SELECT operator with WHERE, GROUP BY and ORDER BY.
 
 WHERE взять из 
-SELECT  code, left(name,10) FROM country WHERE code = 'AFG';
+SELECT  code FROM country WHERE code = 'AFG';
 
 GROUP BY   выбрать что то из списка и сгруппировать.
-mysql> SELECT continent 
+    -> SELECT continent 
     -> FROM country
     -> GROUP BY continent;
 
 ORDER BY сортировка по возрастания  c DESC по убыванию 
-SELECT name, population FROM city ORDER BY population LIMIT 5;
 
 7 Execute other different SQL queries DDL, DML, DCL.
+Data Definition Language (DDL) – это группа операторов определения данных: CREATE, ALTER, DROP
+DML – Data Manipulation Language:  SELECT, INSERT UPDATE DELETE
+DCL – Data Control Language: GRANT, REVOKE, DENY
 
 8 Create a database of new users with different privileges. Connect to the database as a new user and verify that the privileges allow or deny certain actions.
 
@@ -72,8 +74,14 @@ SELECT name, population FROM city ORDER BY population LIMIT 5;
 
 ##### PART 2
 10 Make backup of your database.
+
+    mysql -uroot -p task3_db > task3_db_bak.sql
+    
 11 Delete the table and/or part of the data in the table.
 12 Restore your database.
+
+    mysql -uroot -p task3_db < task3_db_bak.sql
+
 13 Transfer your local database to RDS AWS.
 14 Connect to your database.
 15 Execute SELECT operator similar step 6.
